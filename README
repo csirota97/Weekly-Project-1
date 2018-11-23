@@ -11,7 +11,7 @@ _________________________________
 _________________________________
 
 BasicScrape.py is designed to pull dates, humidity, highs temperatures, and low temperatures
-            from weather.com's 10 day forcast.
+            from weather.com's 10 day forecast.
 
 It does this utilizing BeautifulSoup to pull all tags with class attributes for the corresponding data
             points and stores them in a list.
