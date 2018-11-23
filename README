@@ -1,0 +1,34 @@
+_________________________
+|        WEEK 1         |
+_________________________
+
+This week was my first experience with python, data scraping, utilizing html for displaying data, and csv manipulation.
+
+To run this project, run BasicBokeh.py.
+
+_________________________________
+|        BasicScrape.py         |
+_________________________________
+
+BasicScrape.py is designed to pull dates, humidity, highs temperatures, and low temperatures
+            from weather.com's 10 day forcast.
+
+It does this utilizing BeautifulSoup to pull all tags with class attributes for the corresponding data
+            points and stores them in a list.
+
+Once it has stored the significant data from the html into the lists, it prints the data to a csv file and exits.
+
+
+________________________________
+|        BasicBokeh.py         |
+________________________________
+
+BasicBokeh.py is designed to open the csv file, saved by BasicScrape.py, store the data into lists, and
+            then display the data in a graph, utilizing Bokeh.
+
+Before running the code written for BasicBokeh.py, the file calls BasicScrape.py to ensure that
+    1) the csv file exists
+    2) the data is up-to-date
+
+Before exiting, the program opens the computer's default html-viewing application and displays the graph,
+            showing humidity, high temperatures, and low temperatures in green, red, and blue respectively.
